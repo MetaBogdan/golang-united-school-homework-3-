@@ -20,7 +20,7 @@ func sortMapValues(input map[int]string) (result []string) {
 	}
 
 	sort.Slice(sorted_struct, func(i, j int) bool {
-		return sorted_struct[i].Value < sorted_struct[j].Value
+		return sorted_struct[i].Key < sorted_struct[j].Key
 	})
 
 	for _, key_value := range sorted_struct {
