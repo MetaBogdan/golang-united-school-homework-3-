@@ -7,7 +7,6 @@ import (
 
 func sortMapValues(input map[int]string) (result []string) {
 
-	m := map[string]int{"value1": 1, "value2": 3, "value3": 2}
 	var resultNew []string
 
 	type key_value struct {
@@ -17,7 +16,7 @@ func sortMapValues(input map[int]string) (result []string) {
 
 	var sorted_struct []key_value
 
-	for key, value := range m {
+	for key, value := range input {
 		sorted_struct = append(sorted_struct, key_value{key, value})
 	}
 
