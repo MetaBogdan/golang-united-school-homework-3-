@@ -1,7 +1,6 @@
 package homework
 
 import (
-	"fmt"
 	"sort"
 )
 
