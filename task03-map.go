@@ -8,7 +8,7 @@ import (
 func sortMapValues(input map[int]string) (result []string) {
 
 	m := map[string]int{"value1": 1, "value2": 3, "value3": 2}
-	var result []string
+	var resultNew []string
 
 	type key_value struct {
 		Key   string
@@ -26,10 +26,10 @@ func sortMapValues(input map[int]string) (result []string) {
 	})
 
 	for _, key_value := range sorted_struct {
-		result = append(result, key_value.Key)
+		resultNew = append(resultNew, key_value.Key)
 		fmt.Printf("%s, %d\n", key_value.Key, key_value.Value)
 
 	}
 
-	return result
+	return resultNew
 }
